@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Focus Timer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Focus</h1>
+
+    <div class="circle">
+        <svg width="220" height="220">
+            <circle cx="110" cy="110" r="95"></circle>
+            <circle cx="110" cy="110" r="95" id="progress"></circle>
+        </svg>
+        <div id="time">25:00</div>
+    </div>
+
+    <div class="buttons">
+        <button onclick="startTimer()">Start</button>
+        <button onclick="pauseTimer()">Pause</button>
+        <button onclick="resetTimer()">Reset</button>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

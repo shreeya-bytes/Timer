@@ -1,0 +1,83 @@
+body {
+    margin: 0;
+    background: #f5f5f5;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container */
+.container {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+/* Title */
+h1 {
+    font-weight: 500;
+    color: #333;
+    margin-bottom: 25px;
+}
+
+/* Circle */
+.circle {
+    position: relative;
+    width: 220px;
+    height: 220px;
+    margin: auto;
+}
+
+svg {
+    transform: rotate(-90deg);
+}
+
+circle {
+    fill: none;
+    stroke-width: 8;
+}
+
+/* Background ring */
+circle:first-child {
+    stroke: #e6e6e6;
+}
+
+/* Progress ring */
+#progress {
+    stroke: #444;
+    stroke-linecap: round;
+    stroke-dasharray: 597;
+    stroke-dashoffset: 597;
+    transition: stroke-dashoffset 1s linear;
+}
+
+/* Time text */
+#time {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 36px;
+    color: #222;
+    font-weight: 500;
+}
+
+/* Buttons */
+button {
+    margin: 15px 8px;
+    padding: 10px 18px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background: #555;
+}
